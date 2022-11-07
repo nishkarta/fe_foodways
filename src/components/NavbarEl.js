@@ -127,7 +127,7 @@ function NavbarEl() {
                                     </span>
 
                                     <Dropdown.Toggle variant="bg-yellow" id="dropdown-basic">
-                                        <img src="https://res.cloudinary.com/dm8xxyjfx/image/upload/v1667272030/cld-sample.jpg" style={{ width: '60px', height: '60px', borderRadius: '50%' }} alt='' />
+                                        <img src={user?.image === "http://localhost:5000/uploads/" ? userpp : user?.image} style={{ width: '60px', height: '60px', borderRadius: '50%' }} alt='' />
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
                                         <Dropdown.Item onClick={handleNavigateToProfile}><img src={usericon} alt='' className='me-2'></img>
@@ -143,7 +143,7 @@ function NavbarEl() {
                             </div>) : (<Dropdown>
 
                                 <Dropdown.Toggle variant="bg-yellow" id="dropdown-basic">
-                                    <img src="https://res.cloudinary.com/dm8xxyjfx/image/upload/v1667272031/cld-sample-4.jpg" style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover' }} alt='' />
+                                    <img src={user?.image === "http://localhost:5000/uploads/" ? restopp : user?.image} style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover' }} alt='' />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     <Dropdown.Item onClick={handleNavigateToProfile}><img src={usericon} alt='' className='me-2'></img>
