@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const API = axios.create({
-    baseURL: 'https://foodways.herokuapp.com/api/v1',
+    baseURL: 'https://nishwaysfood.up.railway.app/api/v1',
 
 })
 
